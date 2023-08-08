@@ -6,12 +6,12 @@
 
   本主题是 [Chirpy Jekyll Theme](https://chirpy.cotes.info) 的移植。通过 [issue #83](https://github.com/leanote/leanote/issues/83) 得知了这款主题，可以说是一见钟情了，马上动手移植，大体框架算是移植完成了。
 
-  [![GitHub license](https://img.shields.io/github/license/ctaoist/leanote-theme-chirpy.svg)](https://github.com/ctaoist/leanote-theme-chirpy/blob/master/LICENSE)
+  [![GitHub license](https://img.shields.io/github/license/zhang-yun-jie/leanote-theme-chirpy.svg)](https://github.com/zhang-yun-jie/leanote-theme-chirpy/blob/master/LICENSE)
   [![996.icu](https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg)](https://996.icu)
 
-  [**线上体验 →**](https://blog.ctaoist.cn)
+  [**线上体验 →**](https://zhangyunjie.com.cn:9000/blog/zhangyunjie)
 
-  [![Devices Mockup](images/screenshot.png)](https://blog.ctaoist.cn)
+  [![Devices Mockup](images/screenshot.png)](https://zhangyunjie.com.cn:9000/blog/zhangyunjie)
 
 </div>
 
@@ -30,12 +30,12 @@
 
 ## 安装
 
-这个分支对应我修改过的 [Leanote](https://github.com/ctaoist/leanote)。如果只想使用官方发布的Leanote服务端，请切换到 `leanote_2.6` 分支。
+这个分支对应我修改过的 [Leanote](https://github.com/zhang-yun-jie/leanote)。如果只想使用官方发布的Leanote服务端，请切换到 `leanote_2.6` 分支。
 
 本分支的安装流程如下：
 
-1. 参考 [Leanote Wiki](https://github.com/leanote/leanote/wiki/Leanote-%E4%BA%8C%E8%BF%9B%E5%88%B6%E7%89%88%E8%AF%A6%E7%BB%86%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B----Mac-and-Linux) 安装我修改过的 [Leanote 服务端](https://github.com/ctaoist/leanote/releases)
-2. 在 [Releases页面](https://github.com/ctaoist/leanote-theme-chirpy/releases) 下载 **1.1.x** 版本的压缩包，或者下载仓库 `master` 分支的压缩包，在 Leanote 主题配置页面导入即可。
+1. 参考 [Leanote Wiki](https://github.com/leanote/leanote/wiki/Leanote-%E4%BA%8C%E8%BF%9B%E5%88%B6%E7%89%88%E8%AF%A6%E7%BB%86%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B----Mac-and-Linux) 安装我修改过的 [Leanote 服务端](https://github.com/zhang-yun-jie/leanote/releases)
+2. 在 [Releases页面](https://github.com/zhang-yun-jie/leanote-theme-chirpy/releases) 下载 **1.1.x** 版本的压缩包，或者下载仓库 `master` 分支的压缩包，在 Leanote 主题配置页面导入即可。
 
 ## 使用
 
@@ -101,15 +101,15 @@ Gitalk 需要手动初始化所有文章的评论：用自己的 Github 账号�
 
 ## 反馈
 
-使用过程中，如果遇到问题，请给作者提 [Issue](https://github.com/ctaoist/leanote-theme-chirpy/issues) 。
+使用过程中，如果遇到问题，请给作者提 [Issue](https://github.com/zhang-yun-jie/leanote-theme-chirpy/issues) 。
 
 ## 赞助
 
 如果您喜欢此款主题或者它对您有帮助，请考虑打赏作者，您的支持将会极大地鼓励作者，并帮助作者更好地维护项目！
 
-[![Wechat Pay](https://img.shields.io/badge/-微信打赏作者-brightgreen?logo=wechat&logoColor=white&style=flat)](https://cdn.jsdelivr.net/gh/ctaoist/files@master/images/wechat_pay.jpg)
-[![Alipay](https://img.shields.io/badge/-支付宝打赏作者-blue?logo=alipay&logoColor=white&style=flat)](https://cdn.jsdelivr.net/gh/ctaoist/files@master/images/alipay.jpg)
+[![Wechat Pay](https://img.shields.io/badge/-微信打赏作者-brightgreen?logo=wechat&logoColor=white&style=flat)](https://cdn.zhangyunjie.com.cn/assets/pay/wechat_pay.jpg)
+[![Alipay](https://img.shields.io/badge/-支付宝打赏作者-blue?logo=alipay&logoColor=white&style=flat)](https://cdn.zhangyunjie.com.cn/assets/pay/alipay.jpg)
 
 ## 许可证书
 
-本项目开源，基于 [MIT](https://github.com/ctaoist/leanote-theme-chirpy/blob/master/LICENSE) 许可。
+本项目开源，基于 [MIT](https://github.com/zhang-yun-jie/leanote-theme-chirpy/blob/master/LICENSE) 许可。

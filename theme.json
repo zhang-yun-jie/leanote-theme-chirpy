@@ -35,6 +35,7 @@
     "SubTitle": "骑马倚斜桥，满楼红袖招。",
     "CDN": {
         "yun": {
+            "Name": "yun",
             "Url": "https://cdn.zhangyunjie.com.cn"
         },
         "zhang": {
@@ -46,9 +47,6 @@
         },
         "go": {
             "Url": "https://foreverblog.cn/go.html"
-        },
-        "cloudflare": {
-            "Url": "https://cdnjs.cloudflare.com"
         }
     },
     "ReadNumType": "",

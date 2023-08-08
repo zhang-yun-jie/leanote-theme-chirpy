@@ -29,21 +29,21 @@
     Archives
     {{end}}
   </title>
-  {{ if eq $.themeInfo.CDN.jsdelivr.Name "jsdelivr" }}
+  {{ if eq $.themeInfo.CDN.yun.Name "yun" }}
   <!-- jsDelivr CDN -->
   <link rel="preconnect" href="https://{{$.themeInfo.CDN.jsdelivr.Url}}">
   <link rel="dns-prefetch" href="https://{{$.themeInfo.CDN.jsdelivr.Url}}">
   <!-- JavaScript -->
-  <script src="https://{{$.themeInfo.CDN.jsdelivr.Url}}/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="https://{{$.themeInfo.CDN.yun.Url}}/packages/jquery@3/jquery.min.js"></script>
   <!-- Bootstrap -->
-  <script src="https://{{$.themeInfo.CDN.jsdelivr.Url}}/combine/npm/popper.js@1.16.1,npm/bootstrap@4/dist/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://{{$.themeInfo.CDN.jsdelivr.Url}}/npm/bootstrap@4/dist/css/bootstrap.min.css">
+  <script src="https://{{$.themeInfo.CDN.yun.Url}}/packages/bootstrap@4/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://{{$.themeInfo.CDN.yun.Url}}/packages/bootstrap@4/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://{{$.themeInfo.CDN.jsdelivr.Url}}/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+  <link rel="stylesheet" href="https://{{$.themeInfo.CDN.yun.Url}}/packages/fontawesome-free@5/css/all.min.css">
 
-  <!-- <script async src="https://{{$.themeInfo.CDN.jsdelivr.Url}}/npm/countup.js@1.9.3/dist/countUp.min.js"></script> -->
-  <!-- <script src="https://{{$.themeInfo.CDN.jsdelivr.Url}}/npm/xregexp@5/xregexp-all.min.js"></script> -->
-  <!-- <script src="https://{{$.themeInfo.CDN.jsdelivr.Url}}/combine/npm/lozad/dist/lozad.min.js"></script> -->
+  <!-- <script async src="https://{{$.themeInfo.CDN.yun.Url}}/packages/countup.js@1.9.3/countUp.min.js"></script> -->
+  <!-- <script src="https://{{$.themeInfo.CDN.yun.Url}}/packages/xregexp@5/xregexp-all.min.js"></script> -->
+  <!-- <script src="https://{{$.themeInfo.CDN.yun.Url}}/packages/lozad/lozad.min.js"></script> -->
   {{else}}
   <script src="/libs/jquery/jquery-1.9.0.min.js"></script>
   <script src="/libs/popper.min.js"></script>
@@ -57,8 +57,8 @@
   <link href="{{$.themeBaseUrl}}/style.css" rel="stylesheet">
 
   <script src="https://live2d-widget.zhangyunjie.com.cn/autoload.js"></script>
-  <link rel="stylesheet" href="{{$.themeInfo.CDN.cloudflare.Url}}/ajax/libs/aplayer/1.10.1/APlayer.min.css" integrity="sha512-CIYsJUa3pr1eoXlZFroEI0mq0UIMUqNouNinjpCkSWo3Bx5NRlQ0OuC6DtEB/bDqUWnzXc1gs2X/g52l36N5iw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="{{$.themeInfo.CDN.cloudflare.Url}}/ajax/libs/aplayer/1.10.1/APlayer.min.js" integrity="sha512-RWosNnDNw8FxHibJqdFRySIswOUgYhFxnmYO3fp+BgCU7gfo4z0oS7mYFBvaa8qu+axY39BmQOrhW3Tp70XbaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="{{$.themeInfo.CDN.yun.Url}}/packages/aplayer/1.10.1/APlayer.min.css" integrity="sha512-CIYsJUa3pr1eoXlZFroEI0mq0UIMUqNouNinjpCkSWo3Bx5NRlQ0OuC6DtEB/bDqUWnzXc1gs2X/g52l36N5iw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="{{$.themeInfo.CDN.yun.Url}}/packages/aplayer/1.10.1/APlayer.min.js" integrity="sha512-RWosNnDNw8FxHibJqdFRySIswOUgYhFxnmYO3fp+BgCU7gfo4z0oS7mYFBvaa8qu+axY39BmQOrhW3Tp70XbaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <style>
     #search-results .post-tags a {
