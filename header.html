@@ -29,6 +29,12 @@
     Archives
     {{end}}
   </title>
+  <style>
+    #search-results .post-tags a {
+      font-size: 0.85rem;
+      line-height: 0.85rem;
+    }
+  </style>
   {{ if eq $.themeInfo.CDN.yun.Name "yun" }}
   <!-- jsDelivr CDN -->
   <link rel="preconnect" href="https://{{$.themeInfo.CDN.jsdelivr.Url}}">
@@ -60,24 +66,26 @@
   <link rel="stylesheet" href="{{$.themeInfo.CDN.yun.Url}}/packages/aplayer/1.10.1/APlayer.min.css" integrity="sha512-CIYsJUa3pr1eoXlZFroEI0mq0UIMUqNouNinjpCkSWo3Bx5NRlQ0OuC6DtEB/bDqUWnzXc1gs2X/g52l36N5iw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="{{$.themeInfo.CDN.yun.Url}}/packages/aplayer/1.10.1/APlayer.min.js" integrity="sha512-RWosNnDNw8FxHibJqdFRySIswOUgYhFxnmYO3fp+BgCU7gfo4z0oS7mYFBvaa8qu+axY39BmQOrhW3Tp70XbaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <style>
-    #search-results .post-tags a {
-      font-size: 0.85rem;
-      line-height: 0.85rem;
-    }
-  </style>
 
   {{ if $.themeInfo.GoogleAnalytics.Id }}
   <!-- Google Analytics -->
+  <script async src="https://cdn.zhangyunjie.com.cn/scripts/google-analytics/gtag.js?id=G-QD0FFY8RKC"></script>
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    ga('create', '{{ $.themeInfo.GoogleAnalytics.Id }}', 'auto');
-    ga('send', 'pageview');
+    gtag('config', '{{ $.themeInfo.GoogleAnalytics.Id }}');
   </script>
+<!--  <script>-->
+<!--    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){-->
+<!--      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),-->
+<!--            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)-->
+<!--    })(window,document,'script','https://cdn.zhangyunjie.com.cn/scripts/google-analytics/analytics.js','ga');-->
+
+<!--    ga('create', '{{ $.themeInfo.GoogleAnalytics.Id }}', 'auto');-->
+<!--    ga('send', 'pageview');-->
+<!--  </script>-->
   <!-- End Google Analytics -->
   {{ end }}
 
@@ -160,6 +168,12 @@
             cover: 'https://ubuntu.wouqian.com:5244/d/aliyundrive/%E9%9F%B3%E4%B9%90/%E5%91%A8%E6%9D%B0%E4%BC%A6/%E5%91%A8%E6%9D%B0%E4%BC%A6%20-%20%E5%85%B6%E4%BB%96%E5%8D%95%E6%9B%B2/%E6%88%91%E6%98%AF%E5%A6%82%E6%AD%A4%E7%9B%B8%E4%BF%A1%20(I%20Truly%20Believe)/%E6%88%91%E6%98%AF%E5%A6%82%E6%AD%A4%E7%9B%B8%E4%BF%A1.jpg?sign=RPW3UisrvVLvdVfz3KGH_X2JEpuYwrkLflxglvm42gQ=:0'
           }
         ]
+      });
+
+      // 气泡channel
+      (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.zhangyunjie.com.cn/scripts/channel/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+      ChannelIO('boot', {
+        "pluginKey": "41960cea-ae98-4aee-bbf2-48b74dcdc617"
       });
     });
   </script>
