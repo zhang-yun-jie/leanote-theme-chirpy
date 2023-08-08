@@ -47,6 +47,9 @@
         },
         "go": {
             "Url": "https://foreverblog.cn/go.html"
+        },
+        "cloudflare": {
+            "Url": "https://cdnjs.cloudflare.com"
         }
     },
     "ReadNumType": "",
