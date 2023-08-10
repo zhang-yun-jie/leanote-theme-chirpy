@@ -37,8 +37,15 @@
         			<!-- 用textarea装html, 防止得到的值失真 -->
         			<textarea>{{$.post.Content | raw}}</textarea>
         		</div> <!-- markdownContent -->
-        		<div style="padding: 20px; text-align: center">
-        			<img src="{{$.themeBaseUrl}}/images/loading-32.gif" />
+        		<div class="loading-wrap">
+                  {{if $.themeInfo.loading.default }}
+                    <div class="g-container">
+                        <div class="g-circle"></div>
+                        <div class="g-bubbles"></div>
+                    </div>
+                  {{else}}
+                    <img src="{{$.themeBaseUrl}}/images/loading.gif" />
+                  {{end}}
         		</div>
         	{{else}}
         			{{$.post.Content | raw}}
@@ -107,6 +114,7 @@
 <!-- {{template "mathjax.html" .}} -->
 <div id="isPost"></div>
 
+<link href="{{$.themeBaseUrl}}/loading.css" rel="stylesheet">
 {{if eq $.themeInfo.CDN.yun.Name "yun"}}
 <script>
   // var CDN_URL = "{{$.themeInfo.CDN.jsdelivr.Url}}";
@@ -174,6 +182,13 @@
 <link href="{{$.themeBaseUrl}}/block-container.css" rel="stylesheet">
 
 <!-- markdown 调用markdown来解析得到html -->
+<script async>
+for (let i = 1; i <= 200; i++) {
+    const divElement = document.createElement('span');
+    divElement.classList.add('g-bubble');
+    document.querySelector('.g-bubbles').appendChild(divElement);
+}
+</script>
 {{if $.post.IsMarkdown }}
 <!-- <script src="//{{$.themeInfo.CDN.jsdelivr.Url}}/gh/zhang-yun-jie/leanote@2.7.7/public/libs/md2html/md2html_no_escape.min.js"></script> -->
 <script>

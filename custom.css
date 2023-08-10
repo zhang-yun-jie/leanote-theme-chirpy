@@ -1,0 +1,52 @@
+/* --- bg-wallpaper壁纸 --- */
+.bg-wallpaper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: background .3s, transform .3s, height .3s;
+    background-size: cover;
+    background-position: 50%;
+    z-index: 0;
+}
+.bg-wallpaper:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background-color: rgba(0,0,0,0);
+}
+.bg-wallpaper .wallpaper-video {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .3s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Aplayer音乐播放器 */
+.aplayer-wrapper{
+    position: absolute;
+    /*z-index: 999;*/
+    bottom: 200px;
+    left: 40px;
+}
+
+/* Artalk评论 */
+.artalk, .atk-layer-wrap{
+    --at-color-bg: var(--sidebar-bg)!important;
+    --at-color-font: var(--heading-color)!important;
+    --at-color-border: var(--btn-border-color)!important;
+}
+.artalk>.atk-list>.atk-list-header .atk-dropdown-wrap .atk-dropdown {
+    background-color: var(--main-wrapper-bg)!important;
+    border-color: var(--main-wrapper-bg)!important;
+}

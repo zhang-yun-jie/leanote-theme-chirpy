@@ -11,7 +11,7 @@
 
   [**线上体验 →**](https://zhangyunjie.com.cn:9000/blog/zhangyunjie)
 
-  [![Devices Mockup](images/screenshot.png)](https://zhangyunjie.com.cn:9000/blog/zhangyunjie)
+  [![Devices Mockup](images/screenshot1.png)](https://zhangyunjie.com.cn:9000/blog/zhangyunjie)
 
 </div>
 
