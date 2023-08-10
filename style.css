@@ -19,9 +19,6 @@
 @import url("https://cdn.zhangyunjie.com.cn/iconfont/google/Lato.css");
 @import url("https://cdn.zhangyunjie.com.cn/iconfont/google/Material.css");
 
-body{
-  display: flex;
-}
 #search-results a, h5, h4, h3, h2, h1 {
   color: var(--heading-color);
   font-weight: 400;
@@ -2683,6 +2680,7 @@ figure .mfp-title {
 
 #search-cancel {
   /* 'Cancel' link */
+  white-space: nowrap;
   color: var(--link-color);
   margin-left: 1rem;
   display: none;
@@ -2793,7 +2791,6 @@ figure .mfp-title {
 
 /* --- main wrapper --- */
 #main-wrapper {
-  flex: 1;
   background-color: var(--main-wrapper-bg);
   position: relative;
   min-height: 100vh;
