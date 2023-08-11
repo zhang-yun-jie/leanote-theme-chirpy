@@ -2,8 +2,8 @@
 
 <div id="gitalk_comments"></div>
 
-<link rel="stylesheet" href="{{$.themeInfo.CDN.yun.Url}}/packages/gitalk@1/dist/gitalk.min.css">
-<script src="{{$.themeInfo.CDN.yun.Url}}/packages/gitalk@1/dist/gitalk.min.js"></script>
+<link rel="stylesheet" href="{{$.themeInfo.CDN.yun.Url}}/packages/gitalk@1/gitalk.css">
+<script src="{{$.themeInfo.CDN.yun.Url}}/packages/gitalk@1/gitalk.min.js"></script>
 
 <script>
     var gitalk = new Gitalk({
@@ -32,6 +32,23 @@
         server: '{{$.themeInfo.Comment.Artalk.server}}', // 后端地址
         site: '{{$.themeInfo.Comment.Artalk.site}}' // 你的站点名
     })
+</script>
+
+{{ else if eq $.themeInfo.Comment.CommentType "Waline" }}
+
+<div id="waline"></div>
+<link href="https://unpkg.com/@waline/client@v2/dist/waline.css" rel="stylesheet"/>
+<script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+    init({
+        el: "#waline",
+        dark: "auto",
+        emoji:"{{$.themeInfo.Comment.Waline.emoji}}",
+        locale:  {admin: "博主",placeholder: "有什么新点子？🎉（上方留下邮箱可以收到通知哦）"},
+        requiredMeta: ["name","email","url"],
+        serverURL: "{{$.themeInfo.Comment.Waline.serverURL}}",
+        pageview: true
+    });
 </script>
 
 {{ else if eq $.themeInfo.Comment.CommentType "Valine" }}
