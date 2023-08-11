@@ -75,10 +75,6 @@
         "Waline": {
             "emoji": ["https://cdn.zhangyunjie.com.cn/assets/emojis/menhera","https://cdn.zhangyunjie.com.cn/assets/emojis/menhera-Cat","https://cdn.zhangyunjie.com.cn/assets/emojis/menhera-Valentine","https://cdn.zhangyunjie.com.cn/assets/src/emojis/menhera-Witch","https://cdn.zhangyunjie.com.cn/assets/src/emojis/bilibili-2233"],
             "serverURL": "https://waline.zhangyunjie.com.cn/"
-        },
-        "Valine": {
-            "appId": "",
-            "appKey": ""
         }
     },
     "SocialLinks": [

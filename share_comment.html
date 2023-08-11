@@ -50,22 +50,4 @@
         pageview: true
     });
 </script>
-
-{{ else if eq $.themeInfo.Comment.CommentType "Valine" }}
-
-<script src='{{$.themeInfo.CDN.yun.Url}}/packages/valine@1/Valine.min.js'></script>
-
-<div id="valine_comments" class="pt-2 pb-2">
-</div>
-
-<script type="text/javascript">
-    new Valine({
-        el: '#valine_comments',
-        appId: '{{$.themeInfo.Comment.Valine.appId}}', // Valine appID
-        appKey: '{{$.themeInfo.Comment.Valine.appKey}}', // Valine appKey
-        lang: 'zh-CN',
-        visitor: false // 禁用自带的阅读量统计
-    })
-</script>
-
 {{ end }}
