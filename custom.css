@@ -54,7 +54,7 @@
 
 /* Waline评论 */
 .wl-gif-popup{
-    top: 0!important;
+    top: auto!important;
     bottom: 38px!important;
 }
 .wl-gallery{
