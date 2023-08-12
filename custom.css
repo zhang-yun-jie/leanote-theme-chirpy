@@ -1,3 +1,4 @@
+
 /* --- bg-wallpaper壁纸 --- */
 .bg-wallpaper {
     position: fixed;
@@ -49,4 +50,13 @@
 .artalk>.atk-list>.atk-list-header .atk-dropdown-wrap .atk-dropdown {
     background-color: var(--main-wrapper-bg)!important;
     border-color: var(--main-wrapper-bg)!important;
+}
+
+/* Waline评论 */
+.wl-gif-popup{
+    top: 0!important;
+    bottom: 38px!important;
+}
+.wl-gallery{
+    max-height: 28vh!important;
 }

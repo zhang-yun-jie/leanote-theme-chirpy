@@ -19,7 +19,7 @@
 * SubTitle: 站点子标题
 * CDN: Name留空则使用 local js，需要服务端版本 >= 2.7.2; jsdelivr 可指定网址 cdn.jsdelivr.net jsdelivr.panbaidu.cn
 * ReadNumType: 阅读计数的方式：Leanote, Leacloud, 空字符串则关闭阅读统计
-* GoogleAnalytics: Google 分析(备注: G-QD0FFY8RKC)
+* GoogleAnalytics: Google 分析
 * CommentType: 评论类型：Valine, Gitalk, Artalk, 空字符串则关闭评论
 * FriendLinks 友情链接
 */
@@ -69,12 +69,12 @@
             "admin": [ "" ]
         },
         "Artalk": {
-            "server": "https://zhangyunjie.com.cn:23366",
-            "site": "二十八画生"
+            "server": "",
+            "site": ""
         },
         "Waline": {
-            "emoji": ["https://cdn.zhangyunjie.com.cn/assets/emojis/menhera","https://cdn.zhangyunjie.com.cn/assets/emojis/menhera-Cat","https://cdn.zhangyunjie.com.cn/assets/emojis/menhera-Valentine","https://cdn.zhangyunjie.com.cn/assets/src/emojis/menhera-Witch","https://cdn.zhangyunjie.com.cn/assets/src/emojis/bilibili-2233"],
-            "serverURL": "https://waline.zhangyunjie.com.cn/"
+            "emoji": [],
+            "serverURL": ""
         }
     },
     "SocialLinks": [
