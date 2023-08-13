@@ -1,3 +1,24 @@
+:root {
+    /* 在style中优先调用HarmonyOS_Sans_SC_Medium */
+    --sys-font-family: "HarmonyOS_Sans_SC_Medium", Georgia, -apple-system, 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB', 'Noto Serif SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
+    --code-font-family: "JetBrainsMono Regular", Menlo, Monaco, Consolas, "Courier New";
+    /*--article-font-family: "HarmonyOS_Sans_SC_Medium", var(--base-font-family);*/
+}
+
+/* sidebar导航 */
+.nav-container .nav-item{
+    text-align: center;
+}
+.nav-container .nav-item.dachong>.nav-link{
+    font-weight: 900!important;
+    vertical-align: middle!important;
+    line-height:0.95rem;
+}
+.nav-container .nav-item.dachong>.nav-link>i{
+    font-size: 1.3rem!important;
+    line-height:0.95rem;
+    transform: translateY(0.3rem);
+}
 
 /* --- bg-wallpaper壁纸 --- */
 .bg-wallpaper {
@@ -42,6 +63,9 @@
 }
 
 /* Artalk评论 */
+.artalk{
+    padding-bottom: 15rem;
+}
 .artalk, .atk-layer-wrap{
     --at-color-bg: var(--sidebar-bg)!important;
     --at-color-font: var(--heading-color)!important;
@@ -59,4 +83,21 @@
 }
 .wl-gallery{
     max-height: 28vh!important;
+}
+
+/* footer */
+.footer-wrap>.footer{
+    position: relative;
+}
+.footer-left>p,.footer-right>p{
+    white-space: nowrap;
+}
+.count-getloli{
+    position: absolute;
+    bottom: 80%;
+}
+@media all and (max-width: 576px) {
+    .footer-left>p,.footer-right>p{
+        white-space: normal;
+    }
 }

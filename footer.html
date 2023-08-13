@@ -3,6 +3,7 @@
 -->
 <footer class="d-flex w-100 justify-content-center">
   <div class="d-flex justify-content-between align-items-center">
+    <div class="count-getloli"><img src="https://count.getloli.com/get/@:zhang-yun-jie?theme=asoul" alt=":zhang-yun-jie" /></div>
     <div class="footer-left">
       <p class="mb-0">
         © 2023
@@ -46,4 +47,15 @@
       $tpl.remove();
     }
   }
+</script>
+<script>
+  (function(u, c) {
+    var d = document, t = 'script', o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function(e) { c(e); }); }
+    s.parentNode.insertBefore(o, s);
+  })('//cdn.bootcss.com/pangu/4.0.7/pangu.min.js', function() {
+    pangu.spacingPage();
+  });
 </script>

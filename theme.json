@@ -20,7 +20,7 @@
 * CDN: Name留空则使用 local js，需要服务端版本 >= 2.7.2; jsdelivr 可指定网址 cdn.jsdelivr.net jsdelivr.panbaidu.cn
 * ReadNumType: 阅读计数的方式：Leanote, Leacloud, 空字符串则关闭阅读统计
 * GoogleAnalytics: Google 分析
-* CommentType: 评论类型：Valine, Gitalk, Artalk, 空字符串则关闭评论
+* CommentType: 评论类型：Gitalk, Artalk, Waline 空字符串则关闭评论
 * FriendLinks 友情链接
 */
 {
