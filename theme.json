@@ -34,6 +34,8 @@
     "Title": "云",
     "SubTitle": "骑马倚斜桥，满楼红袖招。",
     "CDN": {
+        "Name": "jsdelivr",
+        "Url": "cdn.jsdelivr.net",
         "yun": {
             "Name": "yun",
             "Url": "https://cdn.zhangyunjie.com.cn"

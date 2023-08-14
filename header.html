@@ -30,7 +30,7 @@
     {{end}}
   </title>
 
-  {{ if eq $.themeInfo.CDN.yun.Name "yun" }}
+  {{ if eq $.themeInfo.CDN.Name "jsdelivr" }}
   <!-- jsDelivr CDN -->
   <link rel="preconnect" href="https://{{$.themeInfo.CDN.jsdelivr.Url}}">
   <link rel="dns-prefetch" href="https://{{$.themeInfo.CDN.jsdelivr.Url}}">
