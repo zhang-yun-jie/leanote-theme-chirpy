@@ -2784,7 +2784,7 @@ figure .mfp-title {
   background-color: var(--main-wrapper-bg);
   position: relative;
   min-height: 100vh;
-  padding-bottom: 6rem;
+  padding-bottom: 10rem;
   padding-left: 0;
   padding-right: 0;
 }
@@ -2867,7 +2867,7 @@ figure .mfp-title {
   }
 
   #main-wrapper {
-    padding-bottom: 6rem;
+    padding-bottom: 10rem;
   }
 
   footer {
